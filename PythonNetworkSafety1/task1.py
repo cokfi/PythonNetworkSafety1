@@ -1,5 +1,5 @@
 
-# program to calculate your age in a hundred years - task1 NetworkSafety
+# python program to calculate your age in a hundred years - task1 NetworkSafety
 
 def task1():
   print("Enter your name")
