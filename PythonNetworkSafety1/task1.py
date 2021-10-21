@@ -1,4 +1,6 @@
-#
+
+# program to calculate your age in a hundred years - task1 NetworkSafety
+
 def task1():
   print("Enter your name")
   name = input()
@@ -6,6 +8,7 @@ def task1():
   age = input()
   age = int(age)+100
   print(name," you will be ",age," years old in a hundred years!" )
+
 def main():
     task1()
 
