@@ -1,5 +1,5 @@
 
-# python program to calculate the divisors of a number
+# python program to calculate the divisors of a number - task2 NetworkSafety
 
 def task2():
   print("Enter a number")
