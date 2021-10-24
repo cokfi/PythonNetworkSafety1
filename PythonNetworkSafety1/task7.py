@@ -14,6 +14,7 @@ def task7():
             max = numbers[0]
         else:
             max = numbers[1]
+    print("The maximum number is ",max)
 
 
 
