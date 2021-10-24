@@ -1,16 +1,14 @@
+#Use the BeautifulSoup and requests Python packages to print out a list of all the article titles on the New York Times homepage.
 
-# python program to generate strong passwords
-import random
-def task5():
-    password_length = random.randint(8, 16)
-    string = ""
-    for i in range(password_length):
-        character =chr(random.randint(33, 126+1))# 33 to 126 from ascii table
-        string += str(character)
+import requests
+from bs4 import BeautifulSoup
 
-    print("Your password is ",string)
-def main():
-    task5()
+url = 'https://www.israelhayom.com'
+r = requests.get(url)
+r_html = r.text
 
-if __name__ == '__main__':
-    main()
+soup = BeautifulSoup(r_html, "lxml")
+print("------ISRAELHAYON.COM HEADLINES:--------")
+for titles in soup.find_all(class_="jeg_post_title"):
+	title = titles.a
+	print(title.string)
