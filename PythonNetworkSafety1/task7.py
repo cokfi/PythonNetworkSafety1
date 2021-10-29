@@ -1,5 +1,5 @@
-
 # python program to find max of 3 numbers
+
 def task7():
     print("Enter 3 numbers with space between them")
     numbers = list(map(int,input().split())) #return a list of numbers
