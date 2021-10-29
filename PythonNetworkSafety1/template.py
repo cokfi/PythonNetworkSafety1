@@ -1,5 +1,5 @@
 
-# python program to find max of 3 numbers
+# python program to do something
 def func1():
 
 
